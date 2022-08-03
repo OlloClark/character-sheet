@@ -15,8 +15,8 @@ The intended audience of this readme is a developer who wishes to contribute to 
 First, clone the repo and install dependencies:
 
 ```sh
-git clone <git repo here>
-cd dnd-character-sheet 
+git clone https://github.com/OlloClark/character-sheet
+cd character-sheet 
 npm install
 ```
 
@@ -31,7 +31,7 @@ If you see the following, you are successfully up and running:
 ```sh 
 Compiled successfully!
 
-You can now view dnd-character-sheet in the browser.
+You can now view character-sheet in the browser.
 
   Local:            http://localhost:3000
   On Your Network:  http://192.168.1.6:3000
