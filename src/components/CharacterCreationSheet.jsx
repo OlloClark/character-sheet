@@ -37,6 +37,18 @@ function CharacterCreationSheet() {
                 <Input register={register} field={"flaws"} label={"Flaws"}/>
                 <br /><br />
 
+                <p>Health:</p>
+                <Input register={register} field={"healthCurrent"} label={"Remaining HP"}/>
+                <Input register={register} field={"healthMax"} label={"out of maximum"}/>
+                <br />
+                <Input register={register} field={"tempHP"} label={"Temporary HP"}/>
+                <br />
+                <Input register={register} field={"hitDiceType"} label={"Hit dice die"}/>
+                <br />
+                <Input register={register} field={"hitDiceCurrent"} label={"Remaining hit dice"}/>
+                <Input register={register} field={"hitDiceMax"} label={"out of maximum"}/>
+                <br />
+
                 <p>Ability Scores:</p>
                 <br />
                 <Input register={register} field={"strength"} label={"Strength (STR)"}/>
