@@ -140,7 +140,19 @@ function CharacterCreationSheet() {
                 <Input register={register} field={"charismaST"} label={"Charisma"}/>
                 <br /><br />
 
-
+                <p>Attacks & Spellcasting:</p>
+                <Input register={register} field={"weaponOrSpell1"} label={"Weapon/Spell"}/>
+                <Input register={register} field={"attackBonus1"} label={"Attack Bonus"}/>
+                <Input register={register} field={"damageAndType1"} label={"Damage and Type"}/>
+                <br />
+                <Input register={register} field={"weaponOrSpell2"} label={"Weapon/Spell"}/>
+                <Input register={register} field={"attackBonus2"} label={"Attack Bonus"}/>
+                <Input register={register} field={"damageAndType2"} label={"Damage and Type"}/>
+                <br />
+                <Input register={register} field={"weaponOrSpell3"} label={"Weapon/Spell"}/>
+                <Input register={register} field={"attackBonus3"} label={"Attack Bonus"}/>
+                <Input register={register} field={"damageAndType3"} label={"Damage and Type"}/>
+                <br /><br />
 
 
             </Form>
