@@ -47,7 +47,14 @@ function CharacterCreationSheet() {
                 <br />
                 <Input register={register} field={"hitDiceCurrent"} label={"Remaining hit dice"}/>
                 <Input register={register} field={"hitDiceMax"} label={"out of maximum"}/>
+                <br /><br />
+
+                <Input register={register} field={"AC"} label={"Armor Class"}/>
                 <br />
+                <Input register={register} field={"initiative"} label={"Initiative"}/>
+                <br />
+                <Input register={register} field={"speed"} label={"Speed"}/>
+                <br /><br />
 
                 <p>Ability Scores:</p>
                 <br />
