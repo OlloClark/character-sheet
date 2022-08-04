@@ -14,9 +14,9 @@ function CharacterCreationSheet() {
                 <p>Basic Info:</p>
                 <br />
                 <Input register={register} field={"playerName"} label={"Player Name"}/>
-                <br />
+                <br /><br />
                 <Input register={register} field={"characterName"} label={"Character Name"}/>
-                <br />
+                <br /><br />
                 <Input register={register} field={"class"} label={"Class"}/>
                 <br />
                 <Input register={register} field={"subclass"} label={"subclass"}/>
@@ -31,6 +31,17 @@ function CharacterCreationSheet() {
                 <br />
                 <Input register={register} field={"experiencePoints"} label={"Experience Points"}/>
                 <br /><br />
+
+                <Input register={register} field={"age"} label={"Character Age"}/>
+                <br />
+                <Input register={register} field={"wisdomST"} label={"Character Height"}/>
+                <br />
+                <Input register={register} field={"wisdomST"} label={"Character Weight"}/>
+                <br />
+                <Input register={register} field={"wisdomST"} label={"Character Appearance"}/>
+                <br /><br />
+
+
 
                 <Input register={register} field={"personalityTraits"} label={"Personality Traits"}/>
                 <br />
@@ -141,6 +152,7 @@ function CharacterCreationSheet() {
                 <br /><br />
 
                 <p>Attacks & Spellcasting:</p>
+                <br />
                 <Input register={register} field={"weaponOrSpell1"} label={"Weapon/Spell"}/>
                 <Input register={register} field={"attackBonus1"} label={"Attack Bonus"}/>
                 <Input register={register} field={"damageAndType1"} label={"Damage and Type"}/>
@@ -158,7 +170,7 @@ function CharacterCreationSheet() {
                 <br /><br />
                 <Input register={register} field={"otherProficiencies"} label={"Other Proficiencies & Languages"}/>
                 <br /><br />
-                <Input register={register} field={"equipment"} label={"Equipment"}/>
+                <Input register={register} field={"equipment"} label={"Equipment & Treasure"}/>
                 <br />
                 <Input register={register} field={"copper"} label={"Copper Pieces"}/>
                 <br />
@@ -170,6 +182,248 @@ function CharacterCreationSheet() {
                 <br />
                 <Input register={register} field={"platinum"} label={"Platinum Pieces"}/>
                 <br /><br />
+
+                <Input register={register} field={"allies"} label={"Allies & Organizations"}/>
+                <br /><br />
+                <Input register={register} field={"backstory"} label={"Character Backstory"}/>
+                <br /><br />
+
+                <p>Spellcasting:</p>
+                <br />
+                <Input register={register} field={"spellcastingAbility"} label={"Spellcasting Ability"}/>
+                <br />
+                <Input register={register} field={"spellSaveDC"} label={"Spell Save DC"}/>
+                <br />
+                <Input register={register} field={"spellAttackBonus"} label={"Spell Attack Bonus"}/>
+                <br /><br />
+
+                <p>Cantrips (0):</p>
+                <br /><br />
+                
+
+                <p>Spell Level 1:</p>
+                <Input register={register} field={"slotsLevel1"} label={" Total Slots"}/>
+                <Input register={register} field={"slotsRemainingLevel1"} label={"Slots Remaining"}/>
+                <br /><br />
+                <Input register={register} field={"level1Spell1"} label={"Spell Name"}/>
+                <Input register={register} field={"level1Spell1Prepared"} label={"Prepared?"}/>
+                <br />
+                <Input register={register} field={"level1Spell2"} label={"Spell Name"}/>
+                <Input register={register} field={"level1Spell2Prepared"} label={"Prepared?"}/>
+                <br />
+                <Input register={register} field={"level1Spell3"} label={"Spell Name"}/>
+                <Input register={register} field={"level1Spell3Prepared"} label={"Prepared?"}/>
+                <br />
+                <Input register={register} field={"level1Spell4"} label={"Spell Name"}/>
+                <Input register={register} field={"level1Spell4Prepared"} label={"Prepared?"}/>
+                <br />
+                <Input register={register} field={"level1Spell5"} label={"Spell Name"}/>
+                <Input register={register} field={"level1Spell5Prepared"} label={"Prepared?"}/>
+                <br />
+                <Input register={register} field={"level1Spell6"} label={"Spell Name"}/>
+                <Input register={register} field={"level1Spell6Prepared"} label={"Prepared?"}/>
+                <br />
+                <Input register={register} field={"level1Spell7"} label={"Spell Name"}/>
+                <Input register={register} field={"level1Spell7Prepared"} label={"Prepared?"}/>
+                <br /><br />
+            
+
+                <p>Spell Level 2:</p>
+                <Input register={register} field={"slotsLevel2"} label={" Total Slots"}/>
+                <Input register={register} field={"slotsRemainingLevel2"} label={"Slots Remaining"}/>
+                <br /><br />
+                <Input register={register} field={"level2Spell1"} label={"Spell Name"}/>
+                <Input register={register} field={"level2Spell1Prepared"} label={"Prepared?"}/>
+                <br />
+                <Input register={register} field={"level2Spell2"} label={"Spell Name"}/>
+                <Input register={register} field={"level2Spell2Prepared"} label={"Prepared?"}/>
+                <br />
+                <Input register={register} field={"level2Spell3"} label={"Spell Name"}/>
+                <Input register={register} field={"level2Spell3Prepared"} label={"Prepared?"}/>
+                <br />
+                <Input register={register} field={"level2Spell4"} label={"Spell Name"}/>
+                <Input register={register} field={"level2Spell4Prepared"} label={"Prepared?"}/>
+                <br />
+                <Input register={register} field={"level2Spell5"} label={"Spell Name"}/>
+                <Input register={register} field={"level2Spell5Prepared"} label={"Prepared?"}/>
+                <br />
+                <Input register={register} field={"level2Spell6"} label={"Spell Name"}/>
+                <Input register={register} field={"level2Spell6Prepared"} label={"Prepared?"}/>
+                <br />
+                <Input register={register} field={"level2Spell7"} label={"Spell Name"}/>
+                <Input register={register} field={"level2Spell7Prepared"} label={"Prepared?"}/>
+                <br /><br />
+
+                <p>Spell Level 3:</p>
+                 <Input register={register} field={"slotsLevel3"} label={" Total Slots"}/>
+                 <Input register={register} field={"slotsRemainingLevel3"} label={"Slots Remaining"}/>
+                <br /><br />
+                <Input register={register} field={"level3Spell1"} label={"Spell Name"}/>
+                <Input register={register} field={"level3Spell1Prepared"} label={"Prepared?"}/>
+                <br />
+                <Input register={register} field={"level3Spell2"} label={"Spell Name"}/>
+                <Input register={register} field={"level3Spell2Prepared"} label={"Prepared?"}/>
+                <br />
+                <Input register={register} field={"level3Spell3"} label={"Spell Name"}/>
+                <Input register={register} field={"level3Spell3Prepared"} label={"Prepared?"}/>
+                <br />
+                <Input register={register} field={"level3Spell4"} label={"Spell Name"}/>
+                <Input register={register} field={"level3Spell4Prepared"} label={"Prepared?"}/>
+                <br />
+                <Input register={register} field={"level3Spell5"} label={"Spell Name"}/>
+                <Input register={register} field={"level3Spell5Prepared"} label={"Prepared?"}/>
+                <br />
+                <Input register={register} field={"level3Spell6"} label={"Spell Name"}/>
+                <Input register={register} field={"level3Spell6Prepared"} label={"Prepared?"}/>
+                <br />
+                <Input register={register} field={"level3Spell7"} label={"Spell Name"}/>
+                <Input register={register} field={"level3Spell7Prepared"} label={"Prepared?"}/>
+                <br /><br />
+
+                <p>Spell Level 4:</p>
+                 <Input register={register} field={"slotsLevel4"} label={" Total Slots"}/>
+                 <Input register={register} field={"slotsRemainingLevel4"} label={"Slots Remaining"}/>
+                <br /><br />
+                <Input register={register} field={"level4Spell1"} label={"Spell Name"}/>
+                <Input register={register} field={"level4Spell1Prepared"} label={"Prepared?"}/>
+                <br />
+                <Input register={register} field={"level4Spell2"} label={"Spell Name"}/>
+                <Input register={register} field={"level4Spell2Prepared"} label={"Prepared?"}/>
+                <br />
+                <Input register={register} field={"level4Spell3"} label={"Spell Name"}/>
+                <Input register={register} field={"level4Spell3Prepared"} label={"Prepared?"}/>
+                <br />
+                <Input register={register} field={"level4Spell4"} label={"Spell Name"}/>
+                <Input register={register} field={"level4Spell4Prepared"} label={"Prepared?"}/>
+                <br />
+                <Input register={register} field={"level4Spell5"} label={"Spell Name"}/>
+                <Input register={register} field={"level4Spell5Prepared"} label={"Prepared?"}/>
+                <br />
+                <Input register={register} field={"level4Spell6"} label={"Spell Name"}/>
+                <Input register={register} field={"level4Spell6Prepared"} label={"Prepared?"}/>
+                <br />
+                <Input register={register} field={"level4Spell7"} label={"Spell Name"}/>
+                <Input register={register} field={"level4Spell7Prepared"} label={"Prepared?"}/>
+                <br /><br />
+
+                <p>Spell Level 5:</p>
+                 <Input register={register} field={"slotsLevel5"} label={" Total Slots"}/>
+                 <Input register={register} field={"slotsRemainingLevel5"} label={"Slots Remaining"}/>
+                <br /><br />
+                <Input register={register} field={"level5Spell1"} label={"Spell Name"}/>
+                <Input register={register} field={"level5Spell1Prepared"} label={"Prepared?"}/>
+                <br />
+                <Input register={register} field={"level5Spell2"} label={"Spell Name"}/>
+                <Input register={register} field={"level5Spell2Prepared"} label={"Prepared?"}/>
+                <br />
+                <Input register={register} field={"level5Spell3"} label={"Spell Name"}/>
+                <Input register={register} field={"level5Spell3Prepared"} label={"Prepared?"}/>
+                <br />
+                <Input register={register} field={"level5Spell4"} label={"Spell Name"}/>
+                <Input register={register} field={"level5Spell4Prepared"} label={"Prepared?"}/>
+                <br />
+                <Input register={register} field={"level5Spell5"} label={"Spell Name"}/>
+                <Input register={register} field={"level5Spell5Prepared"} label={"Prepared?"}/>
+                <br />
+                <Input register={register} field={"level5Spell6"} label={"Spell Name"}/>
+                <Input register={register} field={"level5Spell6Prepared"} label={"Prepared?"}/>
+                <br />
+                <Input register={register} field={"level5Spell7"} label={"Spell Name"}/>
+                <Input register={register} field={"level5Spell7Prepared"} label={"Prepared?"}/>
+                <br /><br />
+
+                <p>Spell Level 6:</p>
+                 <Input register={register} field={"slotsLevel6"} label={" Total Slots"}/>
+                 <Input register={register} field={"slotsRemainingLevel6"} label={"Slots Remaining"}/>
+                <br /><br />
+                <Input register={register} field={"level6Spell1"} label={"Spell Name"}/>
+                <Input register={register} field={"level6Spell1Prepared"} label={"Prepared?"}/>
+                <br />
+                <Input register={register} field={"level6Spell2"} label={"Spell Name"}/>
+                <Input register={register} field={"level6Spell2Prepared"} label={"Prepared?"}/>
+                <br />
+                <Input register={register} field={"level6Spell3"} label={"Spell Name"}/>
+                <Input register={register} field={"level6Spell3Prepared"} label={"Prepared?"}/>
+                <br />
+                <Input register={register} field={"level6Spell4"} label={"Spell Name"}/>
+                <Input register={register} field={"level6Spell4Prepared"} label={"Prepared?"}/>
+                <br />
+                <Input register={register} field={"level6Spell5"} label={"Spell Name"}/>
+                <Input register={register} field={"level6Spell5Prepared"} label={"Prepared?"}/>
+                <br />
+                <Input register={register} field={"level6Spell6"} label={"Spell Name"}/>
+                <Input register={register} field={"level6Spell6Prepared"} label={"Prepared?"}/>
+                <br />
+                <Input register={register} field={"level6Spell7"} label={"Spell Name"}/>
+                <Input register={register} field={"level6Spell7Prepared"} label={"Prepared?"}/>
+                <br /><br />
+
+                <p>Spell Level 7:</p>
+                 <Input register={register} field={"slotsLevel7"} label={" Total Slots"}/>
+                 <Input register={register} field={"slotsRemainingLevel7"} label={"Slots Remaining"}/>
+                <br /><br />
+                <Input register={register} field={"level7Spell1"} label={"Spell Name"}/>
+                <Input register={register} field={"level7Spell1Prepared"} label={"Prepared?"}/>
+                <br />
+                <Input register={register} field={"level7Spell2"} label={"Spell Name"}/>
+                <Input register={register} field={"level7Spell2Prepared"} label={"Prepared?"}/>
+                <br />
+                <Input register={register} field={"level7Spell3"} label={"Spell Name"}/>
+                <Input register={register} field={"level7Spell3Prepared"} label={"Prepared?"}/>
+                <br />
+                <Input register={register} field={"level7Spell4"} label={"Spell Name"}/>
+                <Input register={register} field={"level7Spell4Prepared"} label={"Prepared?"}/>
+                <br />
+                <Input register={register} field={"level7Spell5"} label={"Spell Name"}/>
+                <Input register={register} field={"level7Spell5Prepared"} label={"Prepared?"}/>
+                <br />
+                <Input register={register} field={"level7Spell6"} label={"Spell Name"}/>
+                <Input register={register} field={"level7Spell6Prepared"} label={"Prepared?"}/>
+                <br />
+                <Input register={register} field={"level7Spell7"} label={"Spell Name"}/>
+                <Input register={register} field={"level7Spell7Prepared"} label={"Prepared?"}/>
+                <br /><br />
+
+                <p>Spell Level 8:</p>
+                 <Input register={register} field={"slotsLevel8"} label={" Total Slots"}/>
+                 <Input register={register} field={"slotsRemainingLevel8"} label={"Slots Remaining"}/>
+                <br /><br />
+                <Input register={register} field={"level8Spell1"} label={"Spell Name"}/>
+                <Input register={register} field={"level8Spell1Prepared"} label={"Prepared?"}/>
+                <br />
+                <Input register={register} field={"level8Spell2"} label={"Spell Name"}/>
+                <Input register={register} field={"level8Spell2Prepared"} label={"Prepared?"}/>
+                <br />
+                <Input register={register} field={"level8Spell3"} label={"Spell Name"}/>
+                <Input register={register} field={"level8Spell3Prepared"} label={"Prepared?"}/>
+                <br />
+                <Input register={register} field={"level8Spell4"} label={"Spell Name"}/>
+                <Input register={register} field={"level8Spell4Prepared"} label={"Prepared?"}/>
+                <br />
+                <Input register={register} field={"level8Spell5"} label={"Spell Name"}/>
+                <Input register={register} field={"level8Spell5Prepared"} label={"Prepared?"}/>
+                <br />
+                <Input register={register} field={"level8Spell6"} label={"Spell Name"}/>
+                <Input register={register} field={"level8Spell6Prepared"} label={"Prepared?"}/>
+                <br />
+                <Input register={register} field={"level8Spell7"} label={"Spell Name"}/>
+                <Input register={register} field={"level8Spell7Prepared"} label={"Prepared?"}/>
+                <br /><br />
+
+                <p>Spell Level 9:</p>
+                 <Input register={register} field={"slotsLevel9"} label={" Total Slots"}/>
+                 <Input register={register} field={"slotsRemainingLevel9"} label={"Slots Remaining"}/>
+                <br /><br />
+                <Input register={register} field={"level9Spell1"} label={"Spell Name"}/>
+                <Input register={register} field={"level9Spell1Prepared"} label={"Prepared?"}/>
+                <br />
+                <Input register={register} field={"level9Spell2"} label={"Spell Name"}/>
+                <Input register={register} field={"level9Spell2Prepared"} label={"Prepared?"}/>
+                <br />
+                <Input register={register} field={"level9Spell3"} label={"Spell Name"}/>
+                <Input register={register} field={"level9Spell3Prepared"} label={"Prepared?"}/>
+                <br /><br />
+
 
 
 
