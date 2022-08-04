@@ -1,9 +1,10 @@
-function Form({children}) {
+
+function Form({children, onSubmit}) {
     return (
-        <div>
-            Form Placeholder
+        <form onSubmit={onSubmit}>
             {children}
-        </div>
+            <input type="submit" />
+        </form>
     );
 }
 
