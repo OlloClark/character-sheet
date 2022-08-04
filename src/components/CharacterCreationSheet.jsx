@@ -154,6 +154,24 @@ function CharacterCreationSheet() {
                 <Input register={register} field={"damageAndType3"} label={"Damage and Type"}/>
                 <br /><br />
 
+                <Input register={register} field={"featuresAndTraits"} label={"Features & Traits"}/>
+                <br /><br />
+                <Input register={register} field={"otherProficiencies"} label={"Other Proficiencies & Languages"}/>
+                <br /><br />
+                <Input register={register} field={"equipment"} label={"Equipment"}/>
+                <br />
+                <Input register={register} field={"copper"} label={"Copper Pieces"}/>
+                <br />
+                <Input register={register} field={"silver"} label={"Silver Pieces"}/>
+                <br />
+                <Input register={register} field={"electrum"} label={"Electrum Pieces"}/>
+                <br />
+                <Input register={register} field={"gold"} label={"Gold Pieces"}/>
+                <br />
+                <Input register={register} field={"platinum"} label={"Platinum Pieces"}/>
+                <br /><br />
+
+
 
             </Form>
         </div>
