@@ -62,6 +62,7 @@ function CharacterCreationSheet() {
                 <br /><br />
 
                 <p>Skills:</p>
+                <br />
                 <Input register={register} field={"acrobatics"} label={"Acrobatics (Dex)"}/>
                 <br />
                 <Input register={register} field={"animalHandling"} label={"Animal Handling (Wis)"}/>
@@ -97,6 +98,23 @@ function CharacterCreationSheet() {
                 <Input register={register} field={"stealth"} label={"Stealth (Dex)"}/>
                 <br />
                 <Input register={register} field={"survival"} label={"Survival (Wis)"}/>
+                <br /><br />
+                <Input register={register} field={"passivePerception"} label={"Passive Perception"}/>
+                <br /><br />
+
+                <p>Saving Throws:</p>
+                <br />
+                <Input register={register} field={"strengthST"} label={"Strength"}/>
+                <br />
+                <Input register={register} field={"dexterityST"} label={"Dexterity"}/>
+                <br />
+                <Input register={register} field={"constitutionST"} label={"Constitution"}/>
+                <br />
+                <Input register={register} field={"intelligenceST"} label={"Intelligence"}/>
+                <br />
+                <Input register={register} field={"wisdomST"} label={"Wisdom"}/>
+                <br />
+                <Input register={register} field={"charismaST"} label={"Charisma"}/>
                 <br /><br />
 
 
