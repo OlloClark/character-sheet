@@ -35,16 +35,22 @@ function CharacterCreationSheet() {
                 <br /><br />
 
                 <Input register={register} field={"strength"} label={"Strength (STR)"}/>
+                <Input register={register} field={"strMod"} label={"Mod"}/>
                 <br />
                 <Input register={register} field={"dexterity"} label={"Dexterity (DEX)"}/>
+                <Input register={register} field={"dexMod"} label={"Mod"}/>
                 <br />
                 <Input register={register} field={"constitution"} label={"Constitution (CON)"}/>
+                <Input register={register} field={"conMod"} label={"Mod"}/>
                 <br />
                 <Input register={register} field={"intelligence"} label={"Intelligence (INT)"}/>
+                <Input register={register} field={"intMod"} label={"Mod"}/>
                 <br />
                 <Input register={register} field={"wisdom"} label={"Wisdom (WIS)"}/>
+                <Input register={register} field={"wisMod"} label={"Mod"}/>
                 <br />
                 <Input register={register} field={"charisma"} label={"Charisma (CHA)"}/>
+                <Input register={register} field={"chaMod"} label={"Mod"}/>
                 <br /><br />
 
             </Form>
