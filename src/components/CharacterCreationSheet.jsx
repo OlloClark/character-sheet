@@ -64,40 +64,40 @@ function CharacterCreationSheet() {
                 <p>Skills:</p>
                 <Input register={register} field={"acrobatics"} label={"Acrobatics (Dex)"}/>
                 <br />
-                <Input register={register} field={"acrobatics"} label={"Acrobatics (Dex)"}/>
+                <Input register={register} field={"animalHandling"} label={"Animal Handling (Wis)"}/>
                 <br />
-                <Input register={register} field={"acrobatics"} label={"Acrobatics (Dex)"}/>
+                <Input register={register} field={"arcana"} label={"Arcana (Int)"}/>
                 <br />
-                <Input register={register} field={"acrobatics"} label={"Acrobatics (Dex)"}/>
+                <Input register={register} field={"athletics"} label={"Athletics (Str)"}/>
                 <br />
-                <Input register={register} field={"acrobatics"} label={"Acrobatics (Dex)"}/>
+                <Input register={register} field={"deception"} label={"Deception (Cha)"}/>
                 <br />
-                <Input register={register} field={"acrobatics"} label={"Acrobatics (Dex)"}/>
+                <Input register={register} field={"history"} label={"History (Int)"}/>
                 <br />
-                <Input register={register} field={"acrobatics"} label={"Acrobatics (Dex)"}/>
+                <Input register={register} field={"insight"} label={"Insight (Wis)"}/>
                 <br />
-                <Input register={register} field={"acrobatics"} label={"Acrobatics (Dex)"}/>
+                <Input register={register} field={"intimidation"} label={"Intimidation (Cha)"}/>
                 <br />
-                <Input register={register} field={"acrobatics"} label={"Acrobatics (Dex)"}/>
+                <Input register={register} field={"investigation"} label={"Investigation (Int)"}/>
                 <br />
-                <Input register={register} field={"acrobatics"} label={"Acrobatics (Dex)"}/>
+                <Input register={register} field={"medicine"} label={"Medicine (Wis)"}/>
                 <br />
-                <Input register={register} field={"acrobatics"} label={"Acrobatics (Dex)"}/>
+                <Input register={register} field={"nature"} label={"Nature (Int)"}/>
                 <br />
-                <Input register={register} field={"acrobatics"} label={"Acrobatics (Dex)"}/>
+                <Input register={register} field={"perception"} label={"Perception (Wis)"}/>
                 <br />
-                <Input register={register} field={"acrobatics"} label={"Acrobatics (Dex)"}/>
+                <Input register={register} field={"performance"} label={"Performance (Cha)"}/>
                 <br />
-                <Input register={register} field={"acrobatics"} label={"Acrobatics (Dex)"}/>
+                <Input register={register} field={"persuasion"} label={"Persuasion (Cha)"}/>
                 <br />
-                <Input register={register} field={"acrobatics"} label={"Acrobatics (Dex)"}/>
+                <Input register={register} field={"religion"} label={"Religion (Int)"}/>
                 <br />
-                <Input register={register} field={"acrobatics"} label={"Acrobatics (Dex)"}/>
+                <Input register={register} field={"slightOfHand"} label={"Sleight of Hand (Dex)"}/>
                 <br />
-                <Input register={register} field={"acrobatics"} label={"Acrobatics (Dex)"}/>
+                <Input register={register} field={"stealth"} label={"Stealth (Dex)"}/>
                 <br />
-                <Input register={register} field={"acrobatics"} label={"Acrobatics (Dex)"}/>
-                <br />
+                <Input register={register} field={"survival"} label={"Survival (Wis)"}/>
+                <br /><br />
 
 
 
