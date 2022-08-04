@@ -10,8 +10,33 @@ function CharacterCreationSheet() {
             Character Creation Sheet Placeholder
             </h1>
             <Form onSubmit={handleSubmit(onSubmit)}>
-                <Input register={register} field={"firstName"} label={"First Name"}/>
-                <Input register={register} field={"lastName"} label={"Last Name"}/>
+                <Input register={register} field={"playerName"} label={"Player Name"}/>
+                <br />
+                <Input register={register} field={"characterName"} label={"Character Name"}/>
+                <br />
+                <Input register={register} field={"classLevel"} label={"Class & Level"}/>
+                <br />
+                <Input register={register} field={"background"} label={"Background"}/>
+                <br />
+                
+                <Input register={register} field={"race"} label={"Race"}/>
+                <br />
+                <Input register={register} field={"alignment"} label={"Alignment"}/>
+                <br />
+                <Input register={register} field={"experiencePoints"} label={"Experience Points"}/>
+                <br /><br />
+                <Input register={register} field={"strength"} label={"Strength (STR)"}/>
+                <br />
+                <Input register={register} field={"dexterity"} label={"Dexterity (DEX)"}/>
+                <br />
+                <Input register={register} field={"constitution"} label={"Constitution (CON)"}/>
+                <br />
+                <Input register={register} field={"intelligence"} label={"Intelligence (INT)"}/>
+                <br />
+                <Input register={register} field={"wisdom"} label={"Wisdom (WIS)"}/>
+                <br />
+                <Input register={register} field={"charisma"} label={"Charisma (CHA)"}/>
+                <br />
             </Form>
         </div>
     );
