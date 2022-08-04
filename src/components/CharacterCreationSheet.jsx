@@ -18,13 +18,22 @@ function CharacterCreationSheet() {
                 <br />
                 <Input register={register} field={"background"} label={"Background"}/>
                 <br />
-                
                 <Input register={register} field={"race"} label={"Race"}/>
                 <br />
                 <Input register={register} field={"alignment"} label={"Alignment"}/>
                 <br />
                 <Input register={register} field={"experiencePoints"} label={"Experience Points"}/>
                 <br /><br />
+
+                <Input register={register} field={"personalityTraits"} label={"Personality Traits"}/>
+                <br />
+                <Input register={register} field={"ideals"} label={"Ideals"}/>
+                <br />
+                <Input register={register} field={"bonds"} label={"Bonds"}/>
+                <br />
+                <Input register={register} field={"flaws"} label={"Flaws"}/>
+                <br /><br />
+
                 <Input register={register} field={"strength"} label={"Strength (STR)"}/>
                 <br />
                 <Input register={register} field={"dexterity"} label={"Dexterity (DEX)"}/>
@@ -36,7 +45,8 @@ function CharacterCreationSheet() {
                 <Input register={register} field={"wisdom"} label={"Wisdom (WIS)"}/>
                 <br />
                 <Input register={register} field={"charisma"} label={"Charisma (CHA)"}/>
-                <br />
+                <br /><br />
+
             </Form>
         </div>
     );
