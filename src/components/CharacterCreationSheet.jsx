@@ -7,9 +7,12 @@ function CharacterCreationSheet() {
     return (
         <div>
             <h1 className="text-3xl font-bold underline">
-            Character Creation Sheet Placeholder
+            Character Creation Sheet for Dungeons & Dragons 5e
             </h1>
+            <br /><br />
             <Form onSubmit={handleSubmit(onSubmit)}>
+                <p>Basic Info:</p>
+                <br />
                 <Input register={register} field={"playerName"} label={"Player Name"}/>
                 <br />
                 <Input register={register} field={"characterName"} label={"Character Name"}/>
@@ -34,6 +37,8 @@ function CharacterCreationSheet() {
                 <Input register={register} field={"flaws"} label={"Flaws"}/>
                 <br /><br />
 
+                <p>Ability Scores:</p>
+                <br />
                 <Input register={register} field={"strength"} label={"Strength (STR)"}/>
                 <Input register={register} field={"strMod"} label={"Mod"}/>
                 <br />
@@ -52,6 +57,49 @@ function CharacterCreationSheet() {
                 <Input register={register} field={"charisma"} label={"Charisma (CHA)"}/>
                 <Input register={register} field={"chaMod"} label={"Mod"}/>
                 <br /><br />
+
+                <Input register={register} field={"proficiencyBonus"} label={"Proficiency Bonus"}/>
+                <br /><br />
+
+                <p>Skills:</p>
+                <Input register={register} field={"acrobatics"} label={"Acrobatics (Dex)"}/>
+                <br />
+                <Input register={register} field={"acrobatics"} label={"Acrobatics (Dex)"}/>
+                <br />
+                <Input register={register} field={"acrobatics"} label={"Acrobatics (Dex)"}/>
+                <br />
+                <Input register={register} field={"acrobatics"} label={"Acrobatics (Dex)"}/>
+                <br />
+                <Input register={register} field={"acrobatics"} label={"Acrobatics (Dex)"}/>
+                <br />
+                <Input register={register} field={"acrobatics"} label={"Acrobatics (Dex)"}/>
+                <br />
+                <Input register={register} field={"acrobatics"} label={"Acrobatics (Dex)"}/>
+                <br />
+                <Input register={register} field={"acrobatics"} label={"Acrobatics (Dex)"}/>
+                <br />
+                <Input register={register} field={"acrobatics"} label={"Acrobatics (Dex)"}/>
+                <br />
+                <Input register={register} field={"acrobatics"} label={"Acrobatics (Dex)"}/>
+                <br />
+                <Input register={register} field={"acrobatics"} label={"Acrobatics (Dex)"}/>
+                <br />
+                <Input register={register} field={"acrobatics"} label={"Acrobatics (Dex)"}/>
+                <br />
+                <Input register={register} field={"acrobatics"} label={"Acrobatics (Dex)"}/>
+                <br />
+                <Input register={register} field={"acrobatics"} label={"Acrobatics (Dex)"}/>
+                <br />
+                <Input register={register} field={"acrobatics"} label={"Acrobatics (Dex)"}/>
+                <br />
+                <Input register={register} field={"acrobatics"} label={"Acrobatics (Dex)"}/>
+                <br />
+                <Input register={register} field={"acrobatics"} label={"Acrobatics (Dex)"}/>
+                <br />
+                <Input register={register} field={"acrobatics"} label={"Acrobatics (Dex)"}/>
+                <br />
+
+
 
             </Form>
         </div>
