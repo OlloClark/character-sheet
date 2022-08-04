@@ -17,7 +17,11 @@ function CharacterCreationSheet() {
                 <br />
                 <Input register={register} field={"characterName"} label={"Character Name"}/>
                 <br />
-                <Input register={register} field={"classLevel"} label={"Class & Level"}/>
+                <Input register={register} field={"class"} label={"Class"}/>
+                <br />
+                <Input register={register} field={"subclass"} label={"subclass"}/>
+                <br />
+                <Input register={register} field={"level"} label={"Level"}/>
                 <br />
                 <Input register={register} field={"background"} label={"Background"}/>
                 <br />
@@ -135,6 +139,7 @@ function CharacterCreationSheet() {
                 <br />
                 <Input register={register} field={"charismaST"} label={"Charisma"}/>
                 <br /><br />
+
 
 
 
