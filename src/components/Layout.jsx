@@ -1,6 +1,6 @@
 function Layout({children}) {
     return (
-        <div>
+        <div className={"bg-slate-400 h-screen w-screen"}>
             {children}
         </div>
     );

@@ -1,8 +1,10 @@
-function Input() {
+function Input({register, field, label}) {
     return (
-        <div>
-            Input Placeholder
-        </div>
+        <label>
+            {label}
+            <input {...register(field)} />
+        </label>
+
     );
 }
 
