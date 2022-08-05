@@ -1,8 +1,8 @@
-function Input({register, field, label}) {
+function Input({register, field, label, validations = {}}) {
     return (
         <label>
             {label}
-            <input {...register(field)} />
+            <input {...register(field, validations)} />
         </label>
 
     );
