@@ -2,7 +2,7 @@ import {Form, Input} from './'
 import { useForm } from "react-hook-form";
 
 function CharacterCreationSheet() {
-    const { register, handleSubmit } = useForm();
+    const { register, handleSubmit, formState: { errors } } = useForm();
     const onSubmit = data => console.log(data);
     return (
         <div>
@@ -13,7 +13,8 @@ function CharacterCreationSheet() {
             <Form onSubmit={handleSubmit(onSubmit)}>
                 <p>Basic Info:</p>
                 <br />
-                <Input register={register} field={"playerName"} label={"Player Name"}/>
+                <Input register={register} field={"playerName"} label={"Player Name"} validations={{required: true}} />
+                {errors.playerName?.type === 'required' && <p className={"text-red-800"}>Player Name is required</p>}
                 <br /><br />
                 <Input register={register} field={"characterName"} label={"Character Name"}/>
                 <br /><br />
