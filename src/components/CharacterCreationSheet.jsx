@@ -9,24 +9,26 @@ function CharacterCreationSheet() {
             <h1 className="text-3xl font-bold underline">
             Character Creation Sheet for Dungeons & Dragons 5e
             </h1>
+            <p>Fields marked with an asterisk (*) are required</p>
             <br /><br />
             <Form onSubmit={handleSubmit(onSubmit)}>
                 <p>Basic Info:</p>
                 <br />
-                <Input register={register} field={"playerName"} label={"Player Name"} validations={{required: true}} />
+                <Input register={register} field={"playerName"} label={"Player Name*"} validations={{required: true}} />
                 {errors.playerName?.type === 'required' && <p className={"text-red-800"}>Player Name is required</p>}
                 <br /><br />
-                <Input register={register} field={"characterName"} label={"Character Name"}/>
+                <Input register={register} field={"characterName"} label={"Character Name*"} validations={{required: true}}/>
+                {errors.characterName?.type === 'required' && <p className={"text-red-800"}>Character name is required</p>}
                 <br /><br />
-                <Input register={register} field={"class"} label={"Class"}/>
+                <Input register={register} field={"class"} label={"Class*"}/>
                 <br />
-                <Input register={register} field={"subclass"} label={"subclass"}/>
+                <Input register={register} field={"subclass"} label={"subclass*"}/>
                 <br />
                 <Input register={register} field={"level"} label={"Level"}/>
                 <br />
-                <Input register={register} field={"background"} label={"Background"}/>
+                <Input register={register} field={"background"} label={"Background*"}/>
                 <br />
-                <Input register={register} field={"race"} label={"Race"}/>
+                <Input register={register} field={"race"} label={"Race*"}/>
                 <br />
                 <Input register={register} field={"alignment"} label={"Alignment"}/>
                 <br />
@@ -55,24 +57,24 @@ function CharacterCreationSheet() {
 
                 <p>Health:</p>
                 <Input register={register} field={"healthCurrent"} label={"Remaining HP"}/>
-                <Input register={register} field={"healthMax"} label={"out of maximum"}/>
+                <Input register={register} field={"healthMax"} label={"out of maximum*"}/>
                 <br />
                 <Input register={register} field={"tempHP"} label={"Temporary HP"}/>
                 <br />
-                <Input register={register} field={"hitDiceType"} label={"Hit dice die"}/>
+                <Input register={register} field={"hitDiceType"} label={"Hit dice die*"}/>
                 <br />
                 <Input register={register} field={"hitDiceCurrent"} label={"Remaining hit dice"}/>
-                <Input register={register} field={"hitDiceMax"} label={"out of maximum"}/>
+                <Input register={register} field={"hitDiceMax"} label={"out of maximum*"}/>
                 <br /><br />
 
-                <Input register={register} field={"AC"} label={"Armor Class"}/>
+                <Input register={register} field={"AC"} label={"Armor Class*"}/>
                 <br />
-                <Input register={register} field={"initiative"} label={"Initiative"}/>
+                <Input register={register} field={"initiative"} label={"Initiative*"}/>
                 <br />
-                <Input register={register} field={"speed"} label={"Speed"}/>
+                <Input register={register} field={"speed"} label={"Speed*"}/>
                 <br /><br />
 
-                <p>Ability Scores:</p>
+                <p>Ability Scores*:</p>
                 <br />
                 <Input register={register} field={"strength"} label={"Strength (STR)"}/>
                 <Input register={register} field={"strMod"} label={"Mod"}/>
@@ -93,10 +95,10 @@ function CharacterCreationSheet() {
                 <Input register={register} field={"chaMod"} label={"Mod"}/>
                 <br /><br />
 
-                <Input register={register} field={"proficiencyBonus"} label={"Proficiency Bonus"}/>
+                <Input register={register} field={"proficiencyBonus"} label={"Proficiency Bonus*"}/>
                 <br /><br />
 
-                <p>Skills:</p>
+                <p>Skills*:</p>
                 <br />
                 <Input register={register} field={"acrobatics"} label={"Acrobatics (Dex)"}/>
                 <br />
@@ -134,10 +136,10 @@ function CharacterCreationSheet() {
                 <br />
                 <Input register={register} field={"survival"} label={"Survival (Wis)"}/>
                 <br /><br />
-                <Input register={register} field={"passivePerception"} label={"Passive Perception"}/>
+                <Input register={register} field={"passivePerception"} label={"Passive Perception*"}/>
                 <br /><br />
 
-                <p>Saving Throws:</p>
+                <p>Saving Throws*:</p>
                 <br />
                 <Input register={register} field={"strengthST"} label={"Strength"}/>
                 <br />
