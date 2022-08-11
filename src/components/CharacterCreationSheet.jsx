@@ -16,23 +16,24 @@ function CharacterCreationSheet() {
                 <br />
                 <Input register={register} field={"playerName"} label={"Player Name*"} validations={{required: true}} />
                 {errors.playerName?.type === 'required' && <p className={"text-red-800"}>Player Name is required</p>}
-        X
+
                 <Input register={register} field={"characterName"} label={"Character Name*"} validations={{required: true}}/>
                 {errors.characterName?.type === 'required' && <p className={"text-red-800"}>Character name is required</p>}
                 <br /><br />
                 <Input register={register} field={"class"} label={"Class*"} validations={{required: true}}/>
-                {errors.X?.type === 'required' && <p className={"text-red-800"}>X is required</p>}
+                {errors.class?.type === 'required' && <p className={"text-red-800"}>Class is required</p>}
                 <br />
-                <Input register={register} field={"subclass"} label={"subclass*"} validations={{required: true}}/>
-                {errors.X?.type === 'required' && <p className={"text-red-800"}>X is required</p>}
+                <Input register={register} field={"subclass"} label={"Subclass*"} validations={{required: true}}/>
+                {errors.subclass?.type === 'required' && <p className={"text-red-800"}>Subclass is required</p>}
                 <br />
-                <Input register={register} field={"level"} label={"Level"}/>
+                <Input register={register} field={"level"} label={"Level*"} validations={{required: true}}/>
+                {errors.level?.type === 'required' && <p className={"text-red-800"}>Level is required</p>}
                 <br />
                 <Input register={register} field={"background"} label={"Background*"} validations={{required: true}}/>
-                {errors.X?.type === 'required' && <p className={"text-red-800"}>X is required</p>}
+                {errors.background?.type === 'required' && <p className={"text-red-800"}>Background is required</p>}
                 <br />
                 <Input register={register} field={"race"} label={"Race*"} validations={{required: true}}/>
-                {errors.X?.type === 'required' && <p className={"text-red-800"}>X is required</p>}
+                {errors.race?.type === 'required' && <p className={"text-red-800"}>Race is required</p>}
                 <br />
                 <Input register={register} field={"alignment"} label={"Alignment"}/>
                 <br />
@@ -61,144 +62,145 @@ function CharacterCreationSheet() {
 
                 <p>Health:</p>
                 <Input register={register} field={"healthCurrent"} label={"Remaining HP"}/>
-                <Input register={register} field={"healthMax"} label={"out of maximum*"}/>
+                <Input register={register} field={"healthMax"} label={"out of maximum*"} validations={{required: true}}/>
+                {errors.healthMax?.type === 'required' && <p className={"text-red-800"}>Maximum health is required</p>}
                 <br />
                 <Input register={register} field={"tempHP"} label={"Temporary HP"}/>
                 <br />
                 <Input register={register} field={"hitDiceType"} label={"Hit dice die*"} validations={{required: true}}/>
-                {errors.X?.type === 'required' && <p className={"text-red-800"}>X is required</p>}
+                {errors.hitDiceType?.type === 'required' && <p className={"text-red-800"}>Hit dice die is required</p>}
                 <br />
                 <Input register={register} field={"hitDiceCurrent"} label={"Remaining hit dice"}/>
                 <Input register={register} field={"hitDiceMax"} label={"out of maximum*"} validations={{required: true}}/>
-                {errors.X?.type === 'required' && <p className={"text-red-800"}>X is required</p>}
+                {errors.hitDiceMax?.type === 'required' && <p className={"text-red-800"}>Maximum hit dice is required</p>}
                 <br /><br />
 
                 <Input register={register} field={"AC"} label={"Armor Class*"} validations={{required: true}}/>
-                {errors.X?.type === 'required' && <p className={"text-red-800"}>X is required</p>}
+                {errors.AC?.type === 'required' && <p className={"text-red-800"}>Armor Class is required</p>}
                 <br />
                 <Input register={register} field={"initiative"} label={"Initiative*"} validations={{required: true}}/>
-                {errors.X?.type === 'required' && <p className={"text-red-800"}>X is required</p>}
+                {errors.initiative?.type === 'required' && <p className={"text-red-800"}>Initiative is required</p>}
                 <br />
                 <Input register={register} field={"speed"} label={"Speed*"} validations={{required: true}}/>
-                {errors.X?.type === 'required' && <p className={"text-red-800"}>X is required</p>}
+                {errors.speed?.type === 'required' && <p className={"text-red-800"}>Speed is required</p>}
                 <br /><br />
 
                 <p>Ability Scores*:</p>
                 <br />
                 <Input register={register} field={"strength"} label={"Strength (STR)"} validations={{required: true}}/>
                 <Input register={register} field={"strMod"} label={"Mod"} validations={{required: true}}/>
-                {errors.X?.type === 'required' && <p className={"text-red-800"}>X is required</p>}
-                {errors.X?.type === 'required' && <p className={"text-red-800"}>X is required</p>}
+                {errors.strength?.type === 'required' && <p className={"text-red-800"}>Strength is required</p>}
+                {errors.strMod?.type === 'required' && <p className={"text-red-800"}>Strength Mod is required</p>}
                 <br />
                 <Input register={register} field={"dexterity"} label={"Dexterity (DEX)"} validations={{required: true}}/>
                 <Input register={register} field={"dexMod"} label={"Mod"} validations={{required: true}}/>
-                {errors.X?.type === 'required' && <p className={"text-red-800"}>X is required</p>}
-                {errors.X?.type === 'required' && <p className={"text-red-800"}>X is required</p>}
+                {errors.dexterity?.type === 'required' && <p className={"text-red-800"}>Dexterity is required</p>}
+                {errors.dexMod?.type === 'required' && <p className={"text-red-800"}>Dexterity Mod is required</p>}
                 <br />
                 <Input register={register} field={"constitution"} label={"Constitution (CON)"} validations={{required: true}}/>
                 <Input register={register} field={"conMod"} label={"Mod"} validations={{required: true}}/>
-                {errors.X?.type === 'required' && <p className={"text-red-800"}>X is required</p>}
-                {errors.X?.type === 'required' && <p className={"text-red-800"}>X is required</p>}
+                {errors.constitution?.type === 'required' && <p className={"text-red-800"}>Constitution is required</p>}
+                {errors.conMod?.type === 'required' && <p className={"text-red-800"}>Constitution Mod is required</p>}
                 <br />
                 <Input register={register} field={"intelligence"} label={"Intelligence (INT)"} validations={{required: true}}/>
                 <Input register={register} field={"intMod"} label={"Mod"} validations={{required: true}}/>
-                {errors.X?.type === 'required' && <p className={"text-red-800"}>X is required</p>}
-                {errors.X?.type === 'required' && <p className={"text-red-800"}>X is required</p>}
+                {errors.intelligence?.type === 'required' && <p className={"text-red-800"}>Intelligence is required</p>}
+                {errors.intMod?.type === 'required' && <p className={"text-red-800"}>Intelligence Mod is required</p>}
                 <br />
                 <Input register={register} field={"wisdom"} label={"Wisdom (WIS)"} validations={{required: true}}/>
                 <Input register={register} field={"wisMod"} label={"Mod"} validations={{required: true}}/>
-                {errors.X?.type === 'required' && <p className={"text-red-800"}>X is required</p>}
-                {errors.X?.type === 'required' && <p className={"text-red-800"}>X is required</p>}
+                {errors.wisdom?.type === 'required' && <p className={"text-red-800"}>Wisdom is required</p>}
+                {errors.wisMod?.type === 'required' && <p className={"text-red-800"}>Wisdom Mod is required</p>}
                 <br />
                 <Input register={register} field={"charisma"} label={"Charisma (CHA)"} validations={{required: true}}/>
                 <Input register={register} field={"chaMod"} label={"Mod"} validations={{required: true}}/>
-                {errors.X?.type === 'required' && <p className={"text-red-800"}>X is required</p>}
-                {errors.X?.type === 'required' && <p className={"text-red-800"}>X is required</p>}
+                {errors.charisma?.type === 'required' && <p className={"text-red-800"}>Charisma is required</p>}
+                {errors.chaMod?.type === 'required' && <p className={"text-red-800"}>Charisma Mod is required</p>}
                 <br /><br />
 
                 <Input register={register} field={"proficiencyBonus"} label={"Proficiency Bonus*"} validations={{required: true}}/>
-                {errors.X?.type === 'required' && <p className={"text-red-800"}>X is required</p>}
+                {errors.proficiencyBonus?.type === 'required' && <p className={"text-red-800"}>Proficiency Bonus is required</p>}
                 <br /><br />
 
                 <p>Skills*:</p>
                 <br />
                 <Input register={register} field={"acrobatics"} label={"Acrobatics (Dex)"} validations={{required: true}}/>
-                {errors.X?.type === 'required' && <p className={"text-red-800"}>X is required</p>}
+                {errors.acrobatics?.type === 'required' && <p className={"text-red-800"}>Acrobatics is required</p>}
                 <br />
                 <Input register={register} field={"animalHandling"} label={"Animal Handling (Wis)"} validations={{required: true}}/>
-                {errors.X?.type === 'required' && <p className={"text-red-800"}>X is required</p>}
+                {errors.animalHandling?.type === 'required' && <p className={"text-red-800"}>Animal Handling is required</p>}
                 <br />
                 <Input register={register} field={"arcana"} label={"Arcana (Int)"} validations={{required: true}}/>
-                {errors.X?.type === 'required' && <p className={"text-red-800"}>X is required</p>}
+                {errors.arcana?.type === 'required' && <p className={"text-red-800"}>Arcana is required</p>}
                 <br />
                 <Input register={register} field={"athletics"} label={"Athletics (Str)"} validations={{required: true}}/>
-                {errors.X?.type === 'required' && <p className={"text-red-800"}>X is required</p>}
+                {errors.athletics?.type === 'required' && <p className={"text-red-800"}>Athletics is required</p>}
                 <br />
                 <Input register={register} field={"deception"} label={"Deception (Cha)"} validations={{required: true}}/>
-                {errors.X?.type === 'required' && <p className={"text-red-800"}>X is required</p>}
+                {errors.deception?.type === 'required' && <p className={"text-red-800"}>Deception is required</p>}
                 <br />
                 <Input register={register} field={"history"} label={"History (Int)"} validations={{required: true}}/>
-                {errors.X?.type === 'required' && <p className={"text-red-800"}>X is required</p>}
+                {errors.history?.type === 'required' && <p className={"text-red-800"}>History is required</p>}
                 <br />
                 <Input register={register} field={"insight"} label={"Insight (Wis)"} validations={{required: true}}/>
-                {errors.X?.type === 'required' && <p className={"text-red-800"}>X is required</p>}
+                {errors.insight?.type === 'required' && <p className={"text-red-800"}>Insight is required</p>}
                 <br />
                 <Input register={register} field={"intimidation"} label={"Intimidation (Cha)"} validations={{required: true}}/>
-                {errors.X?.type === 'required' && <p className={"text-red-800"}>X is required</p>}
+                {errors.intimidation?.type === 'required' && <p className={"text-red-800"}>Intimidation is required</p>}
                 <br />
                 <Input register={register} field={"investigation"} label={"Investigation (Int)"} validations={{required: true}}/>
-                {errors.X?.type === 'required' && <p className={"text-red-800"}>X is required</p>}
+                {errors.investigation?.type === 'required' && <p className={"text-red-800"}>Investigation is required</p>}
                 <br />
                 <Input register={register} field={"medicine"} label={"Medicine (Wis)"} validations={{required: true}}/>
-                {errors.X?.type === 'required' && <p className={"text-red-800"}>X is required</p>}
+                {errors.medicine?.type === 'required' && <p className={"text-red-800"}>Medicine is required</p>}
                 <br />
                 <Input register={register} field={"nature"} label={"Nature (Int)"} validations={{required: true}}/>
-                {errors.X?.type === 'required' && <p className={"text-red-800"}>X is required</p>}
+                {errors.nature?.type === 'required' && <p className={"text-red-800"}>Nature is required</p>}
                 <br />
                 <Input register={register} field={"perception"} label={"Perception (Wis)"} validations={{required: true}}/>
-                {errors.X?.type === 'required' && <p className={"text-red-800"}>X is required</p>}
+                {errors.perception?.type === 'required' && <p className={"text-red-800"}>Perception is required</p>}
                 <br />
                 <Input register={register} field={"performance"} label={"Performance (Cha)"} validations={{required: true}}/>
-                {errors.X?.type === 'required' && <p className={"text-red-800"}>X is required</p>}
+                {errors.performance?.type === 'required' && <p className={"text-red-800"}>Performance is required</p>}
                 <br />
                 <Input register={register} field={"persuasion"} label={"Persuasion (Cha)"} validations={{required: true}}/>
-                {errors.X?.type === 'required' && <p className={"text-red-800"}>X is required</p>}
+                {errors.persuasion?.type === 'required' && <p className={"text-red-800"}>Persuasion is required</p>}
                 <br />
                 <Input register={register} field={"religion"} label={"Religion (Int)"} validations={{required: true}}/>
-                {errors.X?.type === 'required' && <p className={"text-red-800"}>X is required</p>}
+                {errors.religion?.type === 'required' && <p className={"text-red-800"}>Religion is required</p>}
                 <br />
                 <Input register={register} field={"slightOfHand"} label={"Sleight of Hand (Dex)"} validations={{required: true}}/>
-                {errors.X?.type === 'required' && <p className={"text-red-800"}>X is required</p>}
+                {errors.slightOfHand?.type === 'required' && <p className={"text-red-800"}>Sleight of Hand is required</p>}
                 <br />
                 <Input register={register} field={"stealth"} label={"Stealth (Dex)"} validations={{required: true}}/>
-                {errors.X?.type === 'required' && <p className={"text-red-800"}>X is required</p>}
+                {errors.stealth?.type === 'required' && <p className={"text-red-800"}>Stealth is required</p>}
                 <br />
                 <Input register={register} field={"survival"} label={"Survival (Wis)"} validations={{required: true}}/>
-                {errors.X?.type === 'required' && <p className={"text-red-800"}>X is required</p>}
+                {errors.survival?.type === 'required' && <p className={"text-red-800"}>Survival is required</p>}
                 <br /><br />
                 <Input register={register} field={"passivePerception"} label={"Passive Perception*"} validations={{required: true}}/>
-                {errors.X?.type === 'required' && <p className={"text-red-800"}>X is required</p>}
+                {errors.passivePerception?.type === 'required' && <p className={"text-red-800"}>Passive Perception is required</p>}
                 <br /><br />
 
                 <p>Saving Throws*:</p>
                 <br />
                 <Input register={register} field={"strengthST"} label={"Strength"} validations={{required: true}}/>
-                {errors.X?.type === 'required' && <p className={"text-red-800"}>X is required</p>}
+                {errors.strengthST?.type === 'required' && <p className={"text-red-800"}>Strength is required</p>}
                 <br />
                 <Input register={register} field={"dexterityST"} label={"Dexterity"} validations={{required: true}}/>
-                {errors.X?.type === 'required' && <p className={"text-red-800"}>X is required</p>}
+                {errors.dexterityST?.type === 'required' && <p className={"text-red-800"}>Dexterity is required</p>}
                 <br />
                 <Input register={register} field={"constitutionST"} label={"Constitution"} validations={{required: true}}/>
-                {errors.X?.type === 'required' && <p className={"text-red-800"}>X is required</p>}
+                {errors.constitutionST?.type === 'required' && <p className={"text-red-800"}>Constitution is required</p>}
                 <br />
                 <Input register={register} field={"intelligenceST"} label={"Intelligence"} validations={{required: true}}/>
-                {errors.X?.type === 'required' && <p className={"text-red-800"}>X is required</p>}
+                {errors.intelligenceST?.type === 'required' && <p className={"text-red-800"}>Intelligence is required</p>}
                 <br />
                 <Input register={register} field={"wisdomST"} label={"Wisdom"} validations={{required: true}}/>
-                {errors.X?.type === 'required' && <p className={"text-red-800"}>X is required</p>}
+                {errors.wisdomST?.type === 'required' && <p className={"text-red-800"}>Wisdom is required</p>}
                 <br />
                 <Input register={register} field={"charismaST"} label={"Charisma"} validations={{required: true}}/>
-                {errors.X?.type === 'required' && <p className={"text-red-800"}>X is required</p>}
+                {errors.charismaST?.type === 'required' && <p className={"text-red-800"}>Charisma is required</p>}
                 <br /><br />
 
                 <p>Attacks & Spellcasting:</p>
