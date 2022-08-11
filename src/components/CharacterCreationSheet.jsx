@@ -250,6 +250,7 @@ function CharacterCreationSheet() {
                 <br /><br />
 
                 <p>Cantrips (0):</p>
+                <Input register={register} field={"cantrips"} label={"All Cantrips"}/>
                 <br /><br />
                 
 
